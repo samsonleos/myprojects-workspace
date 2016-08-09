@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.pass.rec.dao">
+    <class name="User" table="USERS">
+        <id name="id" column="USER_ID" type="java.lang.Long">
+            <generator class="native"/>
+        </id>
+        <property name="username" column="USER_LGN_NM" type="java.lang.String" />
+        <property name="password" column="USER_PSWD" type="java.lang.String"/>
+        <property name="email" column="USER_EMAIL" type="java.lang.String" />
+    </class> 
+</hibernate-mapping>
