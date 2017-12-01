@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>photo capture demo</title>
+	<script src="capture.js">
+	</script>
+</head>
+<body>
+<div class="contentarea">
+	<h1>
+		 photo capture demo
+	</h1>
+	<p>
+		This example demonstrates how to set up a media stream using your built-in webcam, fetch an image from that stream, and create a PNG using that image.
+	</p>
+  <div class="camera">
+    <!--<video id="video">Video stream not available.</video>-->
+	<video id="video" autoplay></video>
+    <button id="startbutton">Take photo</button> 
+  </div>
+  <!--<canvas id="canvas">
+  </canvas> -->
+  <canvas id="canvas" ></canvas>
+ <div>
+    <img id="photo" alt="The screen capture will appear in this box."> 
+ </div>
+ <div>
+ <a id="dl-btn" href="#" download="selfie.png">Save Photo</a>
+ </div>
+ 
+	
+</div>
+</body>
+</html>
